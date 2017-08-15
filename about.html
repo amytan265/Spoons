@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<head>
+<title>Spoons</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="http://68.media.tumblr.com/tumblr_lu2db46ekH1qfoi4t.png">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Raleway:200,300,400,400i,700" rel="stylesheet">
+
+<style type="text/css">
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+#header {
+	width: 100vw;
+	height: 80vh;
+	display: block;
+	padding: 0;
+	background: #131d33;
+	background: -webkit-linear-gradient(left top, #131d33, #3e5c76);
+	background: -o-linear-gradient(bottom right, #131d33, #3e5c76);
+	background: -moz-linear-gradient(bottom right, #131d33, #3e5c76);
+	background: linear-gradient(to bottom right, #131d33, #3e5c76);
+}
+.cont1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+.gametit {
+	font-family: 'Playfair Display', serif;
+	font-size: 9vw;
+	color: #fff;
+	display: block;
+	font-weight: 700;
+	margin-right: 30px;
+	margin: -10vh 0 5vh 0;
+}
+.gamedescrip {
+	font-size: 2.5vh;
+	color: #fff;
+	font-weight: 200;
+	display: block;
+	line-height: 160%;
+	font-family: 'Raleway', sans-serif;
+}
+#bar {
+	width: 100%;
+	height: 8vh;
+	position: fixed;
+	background: #fff;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	z-index:2;
+}
+.inbar {
+	position: relative;
+	font-family: 'Raleway', sans-serif;
+	font-size: 3vh;
+	margin-top: 16px;
+}
+.part {
+	float: left;
+	width: auto;
+	font-weight: 700;
+	padding-left: 15px;
+	word-spacing: 5px;
+}
+.links {
+	float: right;
+	padding-right: 15px;
+}
+.links a {
+	text-transform: uppercase;
+	margin-right: 15px;
+	font-size: 2.5vh;
+	padding: 20px 10px 13px 10px;
+	transition: opacity 0.5s linear;
+}
+.links a:hover {
+	border-bottom: 4px solid #3E5C76;
+	background: #748CAB;
+	transition: opacity 0.5s linear;
+}
+.section {
+	padding: 50px;
+}
+.links a:last-child {
+	margin-right: 0px;
+}
+.sectionheading, .sectionheadin {
+	font-size: 4vh;
+	margin-bottom: 30px;
+	font-family: 'Playfair Display', serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #1D2D44;
+}
+.info {
+	margin: -10px 0px 50px 0px;
+	line-height: 160%;
+}
+.quote {
+    font-size:8vw;
+}
+.sectionheadin {
+    text-align:center;
+}
+#line {
+    margin:auto;
+    width:1px;
+    background:#0D1321;
+    height:935px;
+}
+#line2, #line3, #line4, #line5 {
+    position:absolute;
+    width:300px;
+    height:1px;
+    background:#0D1321;
+    margin-top:39px;
+}
+
+#line4 {
+    margin-top:500px;
+}
+
+#line5 {
+    margin:730px 0px 0px -300px;
+}
+
+#line3 {
+    margin:270px 0px 0px -300px;
+}
+.dot, .dot2, .dot3, .dot4 {
+    width:20px;
+    height:20px;
+    z-index:1;
+    margin:30px 0px 0px -9px;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    position:absolute;
+    background:#3E5C76;
+}
+
+.dot2 {
+    margin-top:260px;
+}
+
+.dot3 {
+    margin-top:490px;
+}
+
+.dot4 {
+    margin-top:720px;
+}
+
+.name, .mname {
+    font-size:32px;
+    position:absolute;
+    margin:20px 0px 0px 28px;
+    background:#fff;
+    color:#3E5C76;
+    padding:0px 7px;
+    width:350px;
+    font-family: 'Playfair Display', serif;
+}
+
+.mname {
+    margin-top:480px;
+}
+
+
+.rname, .aname {
+    font-size:32px;
+    position:absolute;
+    margin:250px 0px 0px -385px;
+    background:#fff;
+    color:#3E5C76;
+    text-align:right;
+    padding-right:7px;
+    width:350px;
+    font-family: 'Playfair Display', serif;
+}
+
+.aname {
+    font-size:32px;
+    position:absolute;
+    margin:710px 0px 0px -385px;
+    background:#fff;
+    color:#3E5C76;
+    text-align:right;
+    padding-right:7px;
+    width:350px;
+    font-family: 'Playfair Display', serif;
+}
+
+.color {
+    color:#0D1321;
+    font-weight:700;
+}
+
+.bio {
+    font-size:15px;
+    font-family: 'Raleway', sans-serif;
+    margin-top:10px;
+    color:#000;
+    line-height:160%;
+}
+
+.tagline, .email {
+    margin-bottom:10px;
+}
+
+.tagline {
+    color:#000;
+}
+
+.email {
+    color:#748CAB;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="bar">
+<div class="inbar">
+<div class="part"><a href="/">PART  FOUR</a></div>
+<div class="links">
+<a href="/">download</a>
+<a href="https://amyt3.github.io/Spoons/about.html">Creators</a>
+<a href="/">Further Reading</a>
+<a href="/">GWC</a>
+
+</div>
+</div>
+</div>
+
+<div id="header">
+<div class="cont1">
+<span class="gametit">S P O O N S</span>
+<span class="gamedescrip">SPOONS is a PC game based on the spoons theory, where the player lives through an average day as a person afflicted with a mental/chronic illness.</span>
+</div>
+</div>
+
+</body>
+
+<div class="section">
+<div class="sectionheadin">Meet the team</div>
+<div id="line">
+
+<div class="dot"></div>
+<div id="line2"></div>
+<div class="name">Spyri <span class="color">P</span>otamopoulou
+<div class="bio">
+<div class="tagline">Character Artist, Game Developer, & Writer</div>
+<div class="email">spotamopoulouteak15@gmail.com</div>
+Rising senior at the Horace Mann High School at the time of the game's development. Lives in Washington Heights. Enjoys making games, writing stories, and designing characters.</div></div>
+
+<div class="dot2"></div>
+<div id="line3"></div>
+<div class="rname">Kezia <span class="color">A</span>rinka
+<div class="bio">
+<div class="tagline">Coloring Artist & Game Developer</div>
+<div class="email">kezia.arinka@harvestchs.org</div>
+I'm a rising junior in high school. I’ve lived in Brooklyn for seven years and counting but I was born in Jakarta, Indonesi. I can play the violin, guitar and piano.</div></div>
+
+<div class="dot3"></div>
+<div id="line4"></div>
+<div class="mname">Danille <span class="color">R</span>ose
+<div class="bio">
+<div class="tagline">Background Artist & Writer</div>
+<div class="email">rose.danille.m@gmail.com</div>
+I am rising junior in Midwood High School, and worked on the design of this project. My interests are art & design, sports, engineering and psychology.</div></div>
+
+<div class="dot4"></div>
+<div id="line5"></div>
+<div class="aname">Amy <span class="color">T</span>an
+<div class="bio">
+<div class="tagline">Web Developer & Game Developer</div>
+<div class="email">amytan285@gmail.com</div>
+I'm currently a rising senior in high school. My hobbies include binge watching anime and taking long naps.
+I code Tumblr themes in my spare time.</div></div>
+
+<!---end line--->
+</div>
+</div>
+
+
+
+</html>
