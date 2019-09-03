@@ -1,6 +1,8 @@
 # Spoons
 Final Project for GWC Summer Immersion Program 2017
+
 Created by Spyri Potamopoulou, Kezia Arinka, Danille Rose and Amy Tan(aka PART 4)
+
 For more information and download links, please click [here](https://amyt3.github.io/Spoons/index.html)
 
 **ABOUT**
